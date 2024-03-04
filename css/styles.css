@@ -155,7 +155,7 @@ header div a img{
     margin-bottom: 2rem;
 }
 .video-wrapper .video{
-    width: 100%;
+    width: auto;
     max-width: 560px;
 }
 .video-wrapper .info-video{
@@ -164,6 +164,23 @@ header div a img{
     padding: 0 1rem;
 }
 
-.footer-nav ul li a{
-    color: black;
+.foot-wraper{
+    background: rgb(35, 209, 122);
+    padding: 1rem 0;
+}
+.foot-wraper img{
+    width: 10rem;
+    height:auto;
+    filter: grayscale(100%) invert(100%);
+}
+.footer-logo{
+    margin-right: 5rem;
+}
+.foot-wraper span{
+    display: block;
+    color: white;
+}
+.footer-nav ul li{
+    width: 50%;
+    float: left;
 }
