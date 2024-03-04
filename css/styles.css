@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+@media (max-width: 480px) {
+    body{
+        font-size: 16px;
+    }
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: all 400ms ease-in-out;
+}
+h2,h2,h4{
+    font-weight: 700;
+    color: white;
+}
+p{
+    font-size: 18px;
+    color: #919090;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Reutilizables */
+.container{
+    width: auto;
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 1rem;
+}
+.dark{
+    color: black;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
+}
+.unstyled-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.text-center{
+    text-align: center;
+}
+.padd-s-ab{
+    padding: 1rem 0;
+}
+
+/* Boton */
+.btn{
+    background-color: rgb(34, 220, 102);
+    font-style: unset;
+    font-weight: 600;
+    padding: .7rem;
+    display: inline-block;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: rgb(19, 168, 111);
+}
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(34, 220, 170); /* Color de fondo del círculo */
+    border-radius: 50%; /* Hace que el borde sea redondeado, creando un círculo */
+    margin: auto;
+}
+
+.test{
+    border: .7rem solid turquoise;
+}
+
+/* Header */
+header{
+    height: 18rem;
+    width: 100%;
+    /* background-color: black;
+    background-image: url(../assets/img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+
+    /* Shorthand */
+    background: black url(../assets/img/header-bg.jpg) no-repeat center / cover;
+    color: white;
+    position: relative;
+}
+
+.top-nav{
+    width: 100%;
+    padding-top: 1rem;
+}
+.top-nav nav ul li{
+    float: left;
+    margin: 0 1rem;
+}
+.top-nav nav ul li a:hover{
+    color: rgb(47, 255, 151);
+}
+header div a img{
+    width: 7rem;
+    height:auto;
+}
+
+.mensaje{
+    width: 58%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) ;
+}
+.mensaje h1 span{
+    font-weight: lighter;
+    font-size: 20px;
+}
+/* Fin del Header */
+
+.beneficios-wraper{
+    padding: 1rem 0 5rem 0;
+}
+.beneficios-wraper ul{
+    text-align: center;
+    margin-top: 1rem;
+}
+.beneficios-wraper ul li{
+    width: 25%;
+    display: inline-block;
+    margin: 0 1rem;
+}
+@media  (max-width: 480px){
+    .beneficios-wraper ul li{
+        display: block;
+    }
+}   
+.video-wrapper{
+    background-color: rgb(228, 228, 228);
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+.video-wrapper .video{
+    width: 100%;
+    max-width: 560px;
+}
+.video-wrapper .info-video{
+    width: auto;
+    max-width: 460px;
+    padding: 0 1rem;
+}
+
+.footer-nav ul li a{
+    color: black;
+}
